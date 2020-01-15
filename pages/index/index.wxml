@@ -1,10 +1,9 @@
-<view class="titlelist">
-  <view class="item">项目</view>
-  <view class="item">类别</view>
-  <view class="item">项目</view>
-  <view class="item">项目</view>
+<!-- 搜索框 -->
+<view class="title">
+ <input class="titleinput"  placeholder="搜索"/>
 </view>
 
-<view>
-hollow word
+<!-- 轮播图 -->
+<view class="lunbotu">
+
 </view>
