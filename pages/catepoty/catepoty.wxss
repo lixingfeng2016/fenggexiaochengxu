@@ -1,10 +1,11 @@
 page {
   height: 100%;
-  padding-top: 100rpx;
+  overflow: hidden;
 }
 .main {
   display: flex;
   height: 100%;
+  padding-top: 100rpx;
 }
 .main .mainleft1 {
   width: 25%;
