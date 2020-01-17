@@ -1,0 +1,3 @@
+<view class="title">
+  <input class="titleinput" placeholder="{{numbersss}}" />
+</view>

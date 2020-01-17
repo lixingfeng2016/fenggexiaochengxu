@@ -1,0 +1,94 @@
+page {
+    height: 100%;
+    padding-top: 100rpx;
+}
+
+.main {
+    // margin-top: 100rpx;
+    display: flex;
+    height: 100%;
+
+
+    // 左边
+    .mainleft1 {
+        width: 25%;
+        height: 100%;
+    }
+
+    .mainleft {
+        background-color: #f3f3f3;
+        width: 100%;
+        // height: 1000rpx;
+        height: 100%;
+        
+
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            color: transparent;
+        }
+
+        .leftitem {
+            font-size: 28rpx;
+            color: #585858;
+            padding: 18rpx 0;
+
+            .item2 {
+                text-align: center;
+                border-left: 5rpx solid #f3f3f3;
+
+                &.active {
+
+                    border-left: 5rpx solid #ea4350;
+                    color: #ea4350
+                }
+            }
+
+        }
+    }
+
+
+// 右边
+    .mainright {
+        flex: 1;
+        height: 100%;
+        .mainright1{
+            height: 100%;
+            ::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+                color: transparent;
+            }
+
+        .righttitle {
+            text-align: center;
+            padding: 18rpx 0;
+        }
+
+
+
+        .contentboss {
+            display: flex;
+            flex-wrap: wrap;
+
+            .content {
+                width: 33.33%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 22rpx;
+
+                image {
+                    width: 120rpx;
+                    height: 120rpx;
+                }
+
+                .wenzi {
+                    font-size: 21rpx;
+                }
+            }
+        }
+    }
+}
+}

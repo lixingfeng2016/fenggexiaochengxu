@@ -1,0 +1,39 @@
+<!-- 头部 -->
+<setch-input numbersss="{{'搜索'}}"/>
+
+<!-- 主体-->
+<view class="main">
+<!-- 左边 -->
+  <view class="mainleft1">
+    <scroll-view scroll-y="true" class="mainleft">
+      <view class="leftitem" wx:for="{{information}}" wx:key="index">
+        <view class="item2 {{showcolor==index?'active':''}}" bindtap="setcolor" data-index="{{index}}"     data-item="{{item}}">{{item.cat_name}}</view>
+      </view>
+    </scroll-view>
+  </view>
+
+<!-- 右边 -->
+  <view class="mainright">
+    <scroll-view scroll-y="true" class="mainright1">
+      <view class="rightitem" wx:for="{{particulars}}" wx:key="index">
+      <!-- 头部标题 -->
+        <view class="righttitle">
+          / {{item.cat_name}} /
+        </view>
+        <!-- 每一项 -->
+        <view class="contentboss">
+        <block wx:for="{{item.children}}" wx:for-item="item1" wx:for-index="index1" wx:key="index1">
+       
+          <navigator class="content">
+           <!-- 图片 -->
+            <image src="{{item1.cat_icon}}"></image>
+            <!-- 字体 -->
+            <view class="wenzi">{{item1.cat_name}}</view>
+          </navigator>
+        </block>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

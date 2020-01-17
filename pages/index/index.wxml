@@ -1,9 +1,41 @@
 <!-- 搜索框 -->
-<view class="title">
- <input class="titleinput"  placeholder="搜索"/>
-</view>
+<setch-input bind:mytap="onetwo" numbersss='{{num}}' />
 
 <!-- 轮播图 -->
-<view class="lunbotu">
+<view class='carousel'>
+  <swiper class='carousel_swiper' indicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#4eb8b8" autoplay="true" interval='2000' circular='true'>
+    <block wx:for="{{carouselList}}" wx:key="key">
+      <swiper-item bindtap='chomeCarouselClick' data-url='{{item.navigator_url}}'>
+        <image class="carouselImg" src='{{item.image_src}}' mode='aspectFill'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 导航栏 -->
+<view class="navigationBar">
+  <view class="nacigationitem" wx:for='{{navigationBars}}' wx:key='key'>
+    <image src="{{item.image_src}}" class="nacigationimg"></image>
+  </view>
+</view>
+
+<!-- 时尚女装 -->
+<view class="fashion" wx:for="{{fashions}}" wx:key="index">
+  <!-- 头部 -->
+  <view class="fashionTitle">
+    <image src="{{item.floor_title.image_src}}" class="fashionImg"></image>
+  </view>
+  <!-- 主体 -->
+  <view class="fashionMain">
+    <view class="fashionitem">
+      <image src="{{item.product_list[0].image_src}}" class="item1img" mode='widthFix'></image>
+    </view>
+
+    <view class="fashionitem1">
+      <image wx:for="{{item.product_list}}" wx:key="key" wx:for-item="v" wx:for-index="i" src="{{v.image_src}}" class="item1img" mode='widthFix' wx:if="{{i!=0}}"></image>
+    </view>
+  </view>
+
+
 
 </view>

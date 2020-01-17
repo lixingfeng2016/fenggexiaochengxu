@@ -1,0 +1,16 @@
+.title {
+  height: 100rpx;
+  width: 750rpx;
+  background-color: #eb4450;
+  padding: 10rpx 25rpx;
+  position: fixed;
+  top: 0;
+  z-index: 99
+}
+.title .titleinput {
+  width: 700rpx;
+  height: 80rpx;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+}
