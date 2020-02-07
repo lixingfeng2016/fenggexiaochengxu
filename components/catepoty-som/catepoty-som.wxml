@@ -1,17 +1,10 @@
-<!-- 头部 -->
-<setch-input numbersss="{{'搜索'}}"/>
-
-<!-- 主体-->
-<!-- <view class="part">
-<catepoty-som flies="{{filds}}"/>
-</view> -->
 
 <!-- 主体-->
 <view class="main">
   <!-- 左边 -->
   <view class="mainleft1">
     <scroll-view scroll-y="true" class="mainleft">
-      <view class="leftitem" wx:for="{{filds}}" wx:key="index">
+      <view class="leftitem" wx:for="{{flies}}" wx:key="index">
         <view class="item2 {{showcolor==index?'active':''}}" bindtap="setcolor" data-index="{{index}}"       data-item="{{item}}">{{item.cat_name}}</view>
       </view>
     </scroll-view>
@@ -20,7 +13,7 @@
   <!-- 右边 -->
   <view class="mainright">
     <scroll-view scroll-y="true" class="mainright1">
-      <view class="rightitem" wx:for="{{filds[showcolor].children}}" wx:key="index">
+      <view class="rightitem" wx:for="{{flies[showcolor].children}}" wx:key="index">
       <!-- 头部标题 -->
         <view class="righttitle">
           / {{item.cat_name}} /

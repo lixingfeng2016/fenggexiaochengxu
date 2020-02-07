@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "setch-input": "/components/seatchInput/seatchInput"
+    "setch-input": "/components/seatchInput/seatchInput",
+    "catepoty-som":"/components/catepoty-som/catepoty-som"
   }
 }

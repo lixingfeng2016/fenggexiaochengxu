@@ -1,0 +1,36 @@
+.title {
+  display: flex;
+  padding: 15rpx;
+  justify-content: center;
+}
+.title .left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 61rpx;
+  border-radius: 1000rpx;
+  background-color: #e7e7e7;
+  font-size: 25rpx;
+  padding: 15rpx;
+  margin-right: 15rpx;
+}
+.title .left icon {
+  margin: 0 10rpx;
+}
+.title .left input {
+  width: 100%;
+}
+.title .right {
+  width: 101rpx;
+  height: 61rpx;
+  font-size: 25rpx;
+  background-color: #EA4350;
+  color: #fff;
+  line-height: 61rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

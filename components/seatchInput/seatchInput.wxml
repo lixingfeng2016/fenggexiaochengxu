@@ -1,3 +1,5 @@
 <view class="title">
-  <input class="titleinput" placeholder="{{numbersss}}" />
+  <navigator url="/pages/search/index" open-type="navigate" class="titleinput">
+    搜索
+  </navigator>
 </view>

@@ -1,0 +1,9 @@
+<view class="father" wx:for="{{datas}}" wx:key="index">
+<navigator url="/pages/goods_detail/index?{{item.goods_id}}" open-type="navigate">
+    <view class="left">
+    <image src="https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg"></image>
+    </view>
+    <view class="right">
+   {{item.goods_name}}</view>
+    </navigator>
+</view>

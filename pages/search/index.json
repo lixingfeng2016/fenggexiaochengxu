@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "show-list":"/components/show-list/show-list"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#eb4450",
+  "navigationBarTitleText": "搜索中心",
+  "navigationBarTextStyle": "white"
+}

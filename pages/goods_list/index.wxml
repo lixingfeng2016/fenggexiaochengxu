@@ -1,0 +1,5 @@
+<!-- 头部搜索 -->
+<setch-input numbersss="{{'搜索'}}"/>
+
+<!-- 列表页上半部分 -->
+<view class="main-top"></view>

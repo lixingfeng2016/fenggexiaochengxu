@@ -76,3 +76,6 @@ page {
   width: 232rpx;
   height: 188rpx !important;
 }
+.fashion .fashionMain .fashionitem1 image:nth-child(-n+2) {
+  margin-bottom: 10rpx;
+}

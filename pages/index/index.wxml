@@ -4,9 +4,11 @@
 <!-- 轮播图 -->
 <view class='carousel'>
   <swiper class='carousel_swiper' indicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#4eb8b8" autoplay="true" interval='2000' circular='true'>
-    <block wx:for="{{carouselList}}" wx:key="key">
-      <swiper-item bindtap='chomeCarouselClick' data-url='{{item.navigator_url}}'>
-        <image class="carouselImg" src='{{item.image_src}}' mode='aspectFill'></image>
+    <block wx:for="{{carouselList}}" wx:key="index">
+      <swiper-item>
+      <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+        <image class="carouselImg" src='{{item.image_src}}' mode='aspectFill' mode="widthFix"></image>
+      </navigator>
       </swiper-item>
     </block>
   </swiper>

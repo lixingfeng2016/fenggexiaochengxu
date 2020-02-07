@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "setch-input": "/components/seatchInput/seatchInput"
+  }
+}

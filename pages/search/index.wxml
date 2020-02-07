@@ -1,0 +1,11 @@
+<view class="title">
+  <view class="left">
+    <icon type="search"></icon>
+    <input placeholder="请输入商品" bindinput="bindKeyInput"></input>
+  </view>
+  <view class="right" bindtap="handlesearch">搜索</view>
+</view>
+
+<view class="main">
+  <show-list datas="{{search_data}}"/>
+</view>

@@ -1,48 +1,48 @@
+import {request} from '../../request/request.js'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    information:[],
-    particulars :[],
-    showcolor:0
+    filds:[],
+    showcolor: 0
   },
-  setcolor(e){
-        // console.log(e)
-    this.setData({
-      showcolor: e.currentTarget.dataset.index,
-      particulars: e.currentTarget.dataset.item.children
-    })
-  },
+
+ 
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    
     this.setright()
+
+
     
   },
+  // 点击分类栏
+  setcolor(e) {
+    // console.log(e)
+    this.setData({
+      showcolor: e.currentTarget.dataset.index,
+    })
+  },
 
-  setright() {
-    var that = this
-    wx.request({
-      url:'https://api.zbztb.cn/api/public/v1/categories',
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success(res){
-        // console.log(res)
-        that.setData({
-          information:res.data.message,
-          particulars: res.data.message[0].children
+  // 获取分类列表
+  async setright() {
+    let res = await request({
+      url: "/categories"
+    });
+    // console.log(res)
+    this.setData({
+      filds: res.data.message,
 
         })
-        // console.log(that.data.particulars)
-      }
-    })
-    
   },
 
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

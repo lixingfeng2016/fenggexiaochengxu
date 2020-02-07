@@ -3,7 +3,7 @@ page {
   overflow: hidden;
 }
 .main {
-  padding-top: 100rpx;
+  margin-top: 100rpx;
   display: flex;
   height: 100%;
 }
